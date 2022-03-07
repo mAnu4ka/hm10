@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food</title>
+    <title>Food </title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
@@ -21,7 +21,7 @@
             </nav>
         </div>
         <div class="header__right-block">
-            <button data-modal class="btn btn_white btn-mob">Связаться с нами</button>
+            <button data-modal class="btn btn_white btn__call">Связаться с нами</button>
         </div>
     </header>
     <div class="sidepanel">
@@ -35,47 +35,49 @@
         </a>
     </div>
 
+
     <div class="preview">
         <div class="bgc_blue"></div>
         <div class="container">
             <div class="tabcontainer">
-                <div class="tabcontent">
+                <div class="tabcontent fitnes_text">
                     <img src="img/tabs/vegy.jpg" alt="vegy">
-                    <div class="tabcontent__descr">
+                    <div class="tabcontent__descr ">
                         Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для
                         людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с
                         оптимальной ценой и высоким качеством!
                     </div>
                 </div>
-                <div class="tabcontent">
+                <div class="tabcontent none prremium_text">
                     <img src="img/tabs/elite.jpg" alt="elite">
-                    <div class="tabcontent__descr">
+                    <div class="tabcontent__descr ">
                         Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение
                         блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!
                     </div>
                 </div>
-                <div class="tabcontent">
+                <div class="tabcontent none postnoe_text">
                     <img src="img/tabs/post.jpg" alt="post">
-                    <div class="tabcontent__descr">
+                    <div class="tabcontent__descr ">
                         Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие
                         продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все
                         будет Ом!
                     </div>
                 </div>
-                <div class="tabcontent">
-                    <img src="img/tabs/vegy.jpg" alt="vegy">
-                    <div class="tabcontent__descr">
+                <div class="tabcontent none sbalansirovanoe_text">
+                    <img src="img/tabs/hamburger.jpg" alt="vegy">
+                    <div class="tabcontent__descr ">
                         Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы
                         тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
                     </div>
                 </div>
+
                 <div class="tabheader">
                     <h3>Выберите стиль питания</h3>
                     <div class="tabheader__items">
-                        <div class="tabheader__item tabheader__item_active">Фитнес</div>
-                        <div class="tabheader__item">Премиум</div>
-                        <div class="tabheader__item">Постное</div>
-                        <div class="tabheader__item">Сбалансированное</div>
+                        <div class="tabheader__item tabheader__item_active" which="1">Фитнес</div>
+                        <div class="tabheader__item" which="2">Премиум</div>
+                        <div class="tabheader__item" which='3'>Постное</div>
+                        <div class="tabheader__item" which="4">Сбалансированное</div>
                     </div>
                 </div>
             </div>
@@ -98,7 +100,7 @@
                 </div>
             </div>
             <div class="offer__action">
-                <button data-modal class="btn btn_dark btn-mob">Связаться с нами</button>
+                <button data-modal class="btn oooooo btn_dark btn__call">Связаться с нами</button>
             </div>
         </div>
         <div class="container">
@@ -117,26 +119,26 @@
             </div>
             <div class="offer__slider">
                 <div class="offer__slider-counter">
-                    <div class="offer__slider-prev throw" what="left">
+                    <div class="offer__slider-prev throw"  what="left">
                         <img src="icons/left.svg" alt="prev">
                     </div>
-                    <span id="current">01</span>
-                    <span id="total">04</span>
-                    <div class="offer__slider-next throw" what="right">
+                    <span id="current" >01</span>
+                    <span id="total" >04</span>
+                    <div class="offer__slider-next throw"  what="right">
                         <img src="icons/right.svg" alt="next">
                     </div>
                 </div>
-                <div class="offer__slider-wrapper ">
-                    <div class="offer__slide one">
+                <div class="offer__slider-wrapper">
+                    <div class="offer__slide ">
                         <img src="img/slider/pepper.jpg" alt="pepper">
                     </div>
-                    <div class="offer__slide two none">
+                    <div class="offer__slide none">
                         <img src="img/slider/food-12.jpg" alt="food">
                     </div>
-                    <div class="offer__slide thi none">
+                    <div class="offer__slide none">
                         <img src="img/slider/olive-oil.jpg" alt="oil">
                     </div>
-                    <div class="offer__slide fo none">
+                    <div class="offer__slide none">
                         <img src="img/slider/paprika.jpg" alt="paprika">
                     </div>
                 </div>
@@ -247,7 +249,7 @@
                 <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
                 <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
                 <img src="icons/right.svg" alt="right">
-                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                <button class="btn btn_dark heee btn_min">Перезвонить мне</button>
             </form>
         </div>
     </div>
@@ -291,7 +293,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer element-animation">
         <div class="container">
             <div class="social">
                 <div class="subtitle">Мы в социальных сетях:</div>
@@ -308,7 +310,7 @@
             </div>
         </div>
     </footer>
-    <div class="anim__anim"></div>
+
     <div class="modal none">
         <div class="modal__dialog">
             <div class="modal__content">
@@ -317,11 +319,12 @@
                     <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
                     <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                    <button class="btn btn_dark  btn_min">Перезвонить мне</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
+
 </html>

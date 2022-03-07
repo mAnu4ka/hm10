@@ -194,7 +194,7 @@ a {
 .tabcontent__descr {
     position: absolute;
     top: 300px;
-    right: -177px;
+    right: -220px;
     width: 550px;
     height: 359px;
     background: rgba(251, 254, 93, .8);
@@ -206,6 +206,7 @@ a {
 }
 
 .tabheader {
+    height: 480px;
     width: 280px;
     padding: 35px 30px;
     background-color: #fff
@@ -296,12 +297,23 @@ a {
     line-height: 21px
 }
 
+.d_none {
+    display: none;
+}
+
 .offer__slider {
     width: 650px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-end
+}
+.offer__slide.active {
+    display: block;
+}
+
+.offer__slide{
+    display: block;
 }
 
 .offer__slider-counter {
@@ -656,7 +668,8 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, .5);
+    transition: 400ms;
 }
 
 .modal__dialog {
@@ -736,8 +749,9 @@ a {
         opacity: 1;
     }
 }
+
 .none{
-    display: none;
+    display: none !important;
 } 
 .stop-scrolling {
     height: 100%;

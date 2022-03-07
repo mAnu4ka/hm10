@@ -1,12 +1,15 @@
 //тут я создаю элемент
 let thro = document.querySelectorAll('.throw')
-let png = document.querySelector('.one')
 let pngs = document.querySelectorAll('.offer__slide')
 let start = document.querySelector('#current')
-let mobal = document.querySelectorAll('.btn-mob')
+let mobal = document.querySelectorAll('.btn__call')
 let modal = document.querySelector('.modal')
-let modal_cl = document.querySelector('.modal__close')
+let modal_cl = document.querySelector('div[data-close]')
+let total = document.querySelector('#total')
+let butons = document.querySelectorAll('.tabheader__item')
+let tabcontent = document.querySelectorAll('.tabcontent')
 
+total.innerText = `/0${pngs.length}`
 for (const item of mobal) {
     item.onclick = () => {
         modal.classList.remove('none')
@@ -95,3 +98,21 @@ $(window).scroll(function () {
         $(modal).addClass('none');
     }
 });
+
+const clear = () => {
+    for (const keys of butons) {
+        keys.classList.remove('tabheader__item_active')
+    }
+    for (const item of tabcontent) {
+        item.classList.add('none')
+    }
+}
+
+for (const keys of butons) {
+    keys.onclick = () => {
+        clear()
+        keys.classList.add('tabheader__item_active')
+        let num = Number(keys.getAttribute('which')) - 1 
+        tabcontent[num].classList.remove('none')
+    }
+}
