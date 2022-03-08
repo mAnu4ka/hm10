@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1435px) {
+  .mobail {
+    display: none;
+  }
+  .tabcontainer {
+    width: 985px;
+  }
+  .container{
+    justify-content: space-evenly !important;
+  }
+}
