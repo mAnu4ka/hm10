@@ -116,3 +116,43 @@ for (const keys of butons) {
         tabcontent[num].classList.remove('none')
     }
 }
+let timer_dad = document.querySelector('.promotion__timer')
+
+let sibling = timer_dad.children[1].children[3].children[0]
+let sibling_men =  timer_dad.children[1].children[2].children[0]
+let sibling_haur = timer_dad.children[1].children[1].children[0]
+let sibling_day =  timer_dad.children[1].children[0].children[0]
+
+let time = +sibling.innerText;
+let menut = +sibling_men.innerText
+let haur = +sibling_haur.innerText
+let day = +sibling_day.innerHTML
+
+setInterval(() => {
+    time--
+    if (time <= 0) {
+        menut--
+        time = 59
+        if(menut <= 0 ){
+            haur--
+            menut = 59
+            if (haur <= 0) {
+                day--
+                haur == 23
+            }
+        }
+
+    }
+    
+
+
+    if (time <= 9) sibling.innerText = `0${time}`
+    else sibling.innerText = time
+    if (menut <= 9) sibling_men.innerText = `0${menut}`
+    else sibling_men.innerText = menut
+    if (haur <= 9) sibling_haur.innerText = `0${haur}`
+    else sibling_haur.innerText = haur
+    if (day <= 9) sibling_day.innerText = `0${day}`
+    else sibling_day.innerText = day
+
+}, 1000);
